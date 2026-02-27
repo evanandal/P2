@@ -5,8 +5,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const PORT = 3001;
-
+const PORT = process.env.PORT || 3001;
 // Demo datasets (replace later with DB/CSV)
 const NUTRITION_DATA = [
   { diet: "Vegan", calories: 420, protein: 20, carbs: 50, fat: 15 },
